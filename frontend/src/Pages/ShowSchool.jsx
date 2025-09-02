@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SchoolCard from "../Components/SchoolCard";
-import "../css/ShowSchool.css";
+import "../Css/ShowSchool.css";
 
 const ShowSchool = () => {
   const [schools, setSchools] = useState([]);
