@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../Css/Home.css";
+import "../css/Home.css";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";

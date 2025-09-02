@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../Css/AddSchool.css";
+import "../css/AddSchool.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
