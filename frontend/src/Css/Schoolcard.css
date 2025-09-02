@@ -1,0 +1,41 @@
+/* src/Css/SchoolCard.css */
+
+.school-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.school-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.school-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.school-card h3 {
+  margin: 10px 0 6px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.school-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.school-card p:last-child {
+  font-weight: 500;
+  color: #34495e;
+}

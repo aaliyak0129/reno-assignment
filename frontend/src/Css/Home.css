@@ -1,0 +1,325 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  background-color: #1e293b37;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 650px;
+  margin-left: 80px;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+
+}
+
+.overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #f1f5f9;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #f97316; 
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #ea580c;
+}
+
+.btn-dark {
+  background: #0f172a;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #1e293b;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #f97316;
+  color: #fff;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 5px;
+  background: linear-gradient(135deg, #ff6a3d, #ff914d);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Card Title */
+.card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 20px 0 12px;
+}
+
+/* Card Description */
+.card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/* Button */
+.card .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff6a3d, #ff914d);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255,106,61,0.3);
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.card .btn:hover {
+  background: linear-gradient(135deg, #ff914d, #ff6a3d);
+  transform: scale(1.07);
+  box-shadow: 0 6px 16px rgba(255,106,61,0.4);
+}
+.facilities-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0a3d62;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.facilities-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.facility-card {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.facility-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.facility-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.facility-desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+/* ==== School Classes Section ==== */
+.school-classes {
+  padding: 60px 20px 20px;  text-align: center;
+  background: #fffaf7;
+}
+
+.school-classes .section-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00394f;
+  margin-bottom: 10px;
+}
+
+.school-classes .section-header p {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Classes Grid */
+.classes-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Class Card */
+.class-card {
+  background: #fff;
+  border-radius: 20px;
+border: 2px solid  #f97316;
+  width: 220px;
+  padding: 60px 20px 10px;
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin-top: 50px;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Circular Image */
+.class-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: -120px auto 15px;
+  display: block;
+  border: 1px solid  #f97316;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Class Title */
+.class-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00394f;
+  margin: 15px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Teacher Info */
+.teacher-info {
+  font-size: 14px;
+  margin: 8px 0 15px;
+  color: #777;
+}
+.teacher-info span {
+  color: #f15a29;
+  font-weight: 500;
+}
+
+/* Class Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.details p {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.details b {
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Color Highlights */
+.details p:nth-child(1) b { color: #f15a29; } /* Age */
+.details p:nth-child(2) b { color: #1a8a4d; } /* Time */
+.details p:nth-child(3) b { color: #f5a623; } /* Capacity */
