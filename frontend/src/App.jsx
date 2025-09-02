@@ -2,11 +2,11 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import Home from "./pages/Home";
 import AddSchool from "./Pages/AddSchool";
 import ShowSchools from "./Pages/ShowSchool";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Home from "./Pages/Home";
 const App = () => {
   return (
     <>
